@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="" alt=""> </img>
+                    <div class="cardbody">
+                        <h5 class="card-title"></h5>
+                        <a href="#" class="btn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit </p>
+    <button id="changeText"></button>
+
+    <script>
+            // var models=[
+            //     {name:`bmw`,
+            //     image:`https://cdn.motor1.com/images/mgl/NGOMej/s1/bmw-i5-edrive40-2023.jpg`,
+            //     link:`dfghj`},
+
+            //     {name:`audi`,
+            //     image:`https://cdn.motor1.com/images/mgl/PE6RK/s1/4x3/audi-rs-e-tron-gt.webp`,
+            //     link:`dfghj`},
+
+            //     {name:`mercedes`,
+            //     image:`https://i0.shbdn.com/photos/25/80/56/x5_1113258056bvh.jpg`,
+            //     link:`dfghj`}
+            // ];
+
+            var btn=document.getElementById(`#changeText`);
+            var p=document.querySelector(`p`);
+            btn.addEventListener(`click`,function(){
+                    p.textContent=`helooo`;
+
+            });
+
+            // setInterval(function() {
+            //     var index=(Math.floor(Math.random()*(models.length)));
+            //     var img= document.querySelector(`.card-img-top`);
+            //     var title=document.querySelector(`.card-title`);
+            //     var a=document.querySelector (`a`);
+
+            //     img.setAttribute(`src`,models[index].image);
+            //     a.setAttribute(`href`,models[index].link);
+            //     title.textContent=models[index].name;
+
+               
+            // }, 1000);
+
+    </script>
+</body>
+</html>
