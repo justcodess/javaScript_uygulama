@@ -58,8 +58,8 @@ console.log("zey age:"+(currentYear-(stu1bd))+"\n"+"ali age:"+(currentYear-(stu2
  
     const stu1math=[50,79,80];
     const stu2math=[20,60,34];
-    let final1=((stu1math[0]+stu1math[1]+stu1math[1])/3);
-    let final2=((stu2math[0]+stu2math[1]+stu2math[1])/3);
+    let final1=((stu1math[0]+stu1math[1]+stu1math[2])/3);
+    let final2=((stu2math[0]+stu2math[1]+stu2math[2])/3);
 
     console.log("zeynep ortalama:"+parseInt(final1));
     let basari=(final1>=50)
