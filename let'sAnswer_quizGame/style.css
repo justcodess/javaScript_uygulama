@@ -61,8 +61,32 @@ float: right;
 margin-right: 10px; 
 }
 footer{
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .option.disabled{
     pointer-events: none;
+}
+.nextbtn{
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+    color: black;
+    border-color: black;
+    background-color: yellow;
+}
+.nextbtn:hover{
+    transform: scale(0.9);
+    transition: 0.7s;
+    color: gray;
+    border-color: yellow;
+    background-color: rgb(255,205,57);
+}
+.nextbtn.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.table{
+    float: left;
 }

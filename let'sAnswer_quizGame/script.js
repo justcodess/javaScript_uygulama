@@ -36,17 +36,19 @@ Quiz.prototype.takeQues=function(){
 
 document.querySelector(".btn-start").addEventListener("click",function(){
     
-   
+        
         document.querySelector(".quiz-box").classList.add("active");
         showQuestions(quiz.takeQues());
-        
+        alert("You have only one chance to answer.".toUpperCase()+" \n "+"Solve carefully good luck!!");
     
 });
 document.querySelector(".nextbtn").addEventListener("click",function(){
-    
+
     if(quiz.questions.length!=quiz.soruIndex+1){
         quiz.soruIndex+=1;
         showQuestions(quiz.takeQues());
+        document.querySelector(".nextbtn").classList.remove("show");
+
     }
     else{
         document.querySelector(".nextbtn").textContent="FINISH";
@@ -95,7 +97,13 @@ function showQuestions(soru){
 
         for(let i=0;i < option_list.children.length; i++){
             option_list.children[i].classList.add("disabled");
+            
         }
 
+        document.querySelector(".nextbtn").classList.add("show");
 
+    }
+
+    function quesTable(soruIndex){
+        let showing=`<span>${soruIndex}</span>`;
     }
