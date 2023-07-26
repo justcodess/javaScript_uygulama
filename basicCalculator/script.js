@@ -9,3 +9,8 @@ function updateDisplay() {
     display.value = displayValue;
     console.log("aa");
 }
+
+
+keys.addEventListener("click",function(e){
+    
+});

@@ -38,21 +38,24 @@ Quiz.prototype.takeQues=function(){
 
 ui.btn_start.addEventListener("click",function(){
     
-        startTimer(10);    
+        startTimer(30);    
         timer_line();    
         document.querySelector(".quiz-box").classList.add("active");
         ui.btn_start.classList.add("inactive");
         showQuestions(quiz.takeQues());
         quesTable(quiz.soruIndex+1,quiz.questions.length);
         skorTable(quiz.userCorrect,quiz.questions.length);
-        alert("You have only one chance to answer.".toUpperCase()+" \n "+"Solve carefully good luck!!");
+        // alert("You have only one chance to answer.".toUpperCase()+" \n "+"Solve carefully good luck!!");
     
 });
 ui.nextbtn.addEventListener("click",function(){
     clearInterval(counter);
     clearInterval(counterLine);
 
-    startTimer(10);
+    document.getElementById("lasttime").style.color="black";
+    ui.lastTime_text.textContent="last time";
+
+    startTimer(30);
     timer_line();
     if(quiz.questions.length!=quiz.soruIndex+1){
         quiz.soruIndex+=1;
@@ -169,10 +172,10 @@ function showQuestions(soru){
             if(time<3){
                 document.getElementById("lasttime").style.color="red";
                 document.getElementById("lasttime").style.fontSize="25px";
-            
+            ui.lastTime_text.textContent="time's up";
             if(time<0){
             clearInterval(counter);
-            ui.lastTime_text.textContent="time's up";
+            
             
             // let ans=quiz.takeQues().correctAns;
 
@@ -196,7 +199,7 @@ function showQuestions(soru){
 
         counterLine=setInterval(timer,100);
         function timer(){
-            lineWidth -= 6;
+            lineWidth -= 2;
             ui.timeLine.style.width=lineWidth+"px";
 
             if(lineWidth<0){
