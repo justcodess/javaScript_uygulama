@@ -1,9 +1,14 @@
-.btn-start , .quiz-box{
+.btn_start , .quiz-box, .skor_box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.btn_start.inactive{
+    opacity: 0;
+    pointer-events: none;
+}
+
 .quiz-box.active{
     opacity: 1;
     pointer-events: auto;
@@ -22,6 +27,18 @@
     font-size: 30px;
     font-weight: 700;
    color: rgb(164,53,240);
+}
+.skor_box{
+    opacity: 0;
+    pointer-events: none;
+    z-index: 20;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skor_box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50% -50%) scale(1);
 }
 .ques-text{
     font-size: 25px;
@@ -87,6 +104,36 @@ footer{
     opacity: 1;
     pointer-events: auto;
 }
-.table{
-    float: left;
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 20px;
 }
+.skorIcon{
+    padding: 20px;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.timer{
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 20px;
+}
+header .timeLine{
+    position: absolute;
+    bottom :0;
+    left: 0;
+    background: #F0A500;
+    height: 10px;
+    border-radius: 10px;
+}
+
+

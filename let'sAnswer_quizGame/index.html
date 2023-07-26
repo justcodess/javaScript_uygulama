@@ -10,16 +10,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="btn-start">
+    <div class="btn_start">
    
         <button class="btn btn-warning btn-large">START QUİZ</button>
     </div>
     <div class="card quiz-box">
         <header class="card-header">
             <div class="title">QUİZ APP</div>
+            <div class="timer">
+                <div class="lastTime_text">last time</div>
+                <div id="lasttime" class="lastTime_sec"></div>
+            </div>
+            <div class="timeLine"></div>
         </header>
         <section class="card-body">
-            <div class="ques-text">
+            <div class="ques_text">
                 <span>Lorem ipsum dolor sit amet.</span>
             </div>
             <div class="option_list">
@@ -38,17 +43,26 @@
             </div>
         </section>
         <footer class="card-footer">
-            
+            <div class="quesTable"></div>
             <button class="nextbtn btn btn-warning btn-large ">next question</button>
-            <div class="quesTable">
-                <span class="table badge bg-warning">1/4</span>
-            </div>
+            <div class="skorTable">cas</div>
         </footer>
+    </div>
+    <div class="skor_box">
+        <div class="skorIcon"><i class="fas fa-check-circle fa-7x"></i></div>
+        <div class="skorTitle"><h1>quiz is completed!</h1></div>
+        <div class="skor"></div>
+           
+        <div class="buttons">
+            <button class="btn btn-primary btn_replay">start again</button>
+            <button class="btn btn-primary btn_quit">close</button>
+        </div>
+        
     </div>
 
 
 
-
+    <script src="ui.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
