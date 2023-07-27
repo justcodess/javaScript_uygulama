@@ -98,3 +98,58 @@ function makeUpperCase(str) {
     let trans=number*-1;
     return trans;
   }
+
+  //find volume
+  class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+      let v=length*width*height;
+      return v;
+    }
+  }
+
+  //tas kagit makas
+  const rps = (p1, p2) => {
+    if(p1 === p2) {
+      return 'Draw!'
+    }; 
+    return `Player ${/rockscissors|scissorspaper|paperrock/.test(p1+p2)? 1 : 2} won!`;
+  
+  };
+
+  //replace function
+  function removeExclamationMarks(s) {
+
+    return s.replace(/!/gi,"");
+  }
+--------------------------------------------
+  function removeExclamationMarks(s){
+    return s.split("!").join('');
+  }
+  
+  //traffic lambs
+  function updateLight(current) {
+    const states = ['green', 'yellow', 'red'];
+    let nextIndex = (states.indexOf(current) + 1) % states.length;
+    return states[nextIndex];
+  }
+
+  //reverse
+  function solution(str){
+  
+    return str.split('').reverse().join('');  
+   }
+
+   //çift elemanları remove
+   function removeEveryOther(arr){
+  
+    arr = arr?.filter((item, i)=>i%2==0)
+    return arr
+-------------------------------------------
+    function removeEveryOther(arr){
+        return arr.filter(function( item, index) {
+          return index % 2 === 0;
+        });
+      }
+
+
+}
