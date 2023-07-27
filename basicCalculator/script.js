@@ -25,7 +25,7 @@ keys.addEventListener("click",function(e){
     case '*':
     case '/':
     case '=':
-    case '%':
+    
     case '-+':
     
         handleOperator(value);
@@ -35,6 +35,9 @@ keys.addEventListener("click",function(e){
         break;
     case 'C':
         clear();
+        break;
+    case '%':
+
         break;
     default:
         inputNumber(value);
@@ -88,6 +91,10 @@ function clear(){
     if(!displayValue.includes('.','-','+','*','/','=','%')){
         displayValue +='';
     }
+}
+function yuzde(first,second,operator,yuzde){
+    let yuzde=second/100;
+    calculate
 }
 function handleOperator(nextOperator){
     const value=parseFloat(displayValue);
