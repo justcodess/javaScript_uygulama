@@ -7,36 +7,49 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 300px;
+    height: 400px;
 }
 .screen{
     border: 1px solid gray;
     background-color: white;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin-top: 20px;
     text-align: end;
     font-size: 30px;
+
 }
-.box{
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 20px;
+.bottom{
+    padding-top: 20px;
 }
 .operators{
-    padding: 10px;
+   
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,50px);
     gap: 10px;
-    /* koyu */
+   
     
 }
+.zero{
+    border-radius: 45%;
+    grid-column: 1/span 2;
+}
+
 button{
     background-color: gray;
     font-weight: 600;
+     border-radius: 50%;
 }
 
 .opr{
-    background-color:rgb(218,220,224) ;
+    background-color:rgb(212, 103, 63) ;
+}
+.decimal{
+    background-color: gray;
+}
+.islemSil, .isaret, .yuzde{
+    background-color:rgb(227, 229, 233) ;
 }
 
 button:hover{
