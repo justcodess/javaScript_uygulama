@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.start_title{
+    background-image: url("https://pnghq.com/wp-content/uploads/super-mario-logo-transparent-png-72085.png");
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    height: 261px;
+    width: 60vh;
+    background-size:cover;
+    background-position: center;
+}
+.start_button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+.start_button:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+    font-size: 27px;
+}
+
+.start_box.inactive{
+    opacity: 0;
+    pointer-events: none;
+}
+.background{       
+    background-image: url("https://i.pinimg.com/originals/8f/1a/b8/8f1ab8b14a55720d6859620a6f596933.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.background::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(97, 92, 92, 0.4);
+}
+/*oyuna girnce ekran aydınlansın 
+
+ .background::before.active{
+    background: rgba(97, 92, 92, 0.2);
+
+} */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vh;
+    height: fit-content;
+    background: transparent;
+    border-radius: 10px; 
+    opacity: 0;
+    pointer-events: none;
+    z-index: 20;
+}
+.container.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+header{
+    padding: 20px;
+    margin-left: 30px;
+    text-transform:uppercase ;
+    color: white;
+    text-align: center;
+}
+main{
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20vh 20vh 20vh 20vh;
+}
+
+.card{
+    background-color: black;
+    width: 20vh;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 5px 10px 10px 0 #413f3f;
+     background-image: url('https://styles.redditmedia.com/t5_2x8ys/styles/communityIcon_ec9vp3b6l4r41.jpg?format=pjpg&s=9bd629eb7bd1e639658933f515205e2cb3de8bff');
+    cursor: pointer;
+    
+}
+.card.disabled{
+    pointer-events: none;
+}
+
+
+
+/* card other side */
+
+/* background-image: url('https://styles.redditmedia.com/t5_2x8ys/styles/communityIcon_ec9vp3b6l4r41.jpg?format=pjpg&s=9bd629eb7bd1e639658933f515205e2cb3de8bff'); */

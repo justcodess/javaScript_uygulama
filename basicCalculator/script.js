@@ -24,10 +24,7 @@ keys.addEventListener("click",function(e){
     case '-':
     case '*':
     case '/':
-    case '=':
-    
-    case '-+':
-    
+    case '=': 
         handleOperator(value);
         break;
     case '.':
@@ -36,9 +33,7 @@ keys.addEventListener("click",function(e){
     case 'C':
         clear();
         break;
-    case '%':
-
-        break;
+   
     default:
         inputNumber(value);
     }
@@ -86,16 +81,21 @@ function inputDecimal(){
         displayValue +='.';
     }
 }
+
+function isaret(){
+    
+    return -displayValue;
+}
 function clear(){
     displayValue = '0';
     if(!displayValue.includes('.','-','+','*','/','=','%')){
         displayValue +='';
     }
 }
-function yuzde(first,second,operator,yuzde){
-    let yuzde=second/100;
-    calculate
-}
+// function yuzde(first,second,operator,yuzde){
+//     let yuzde=second/100;
+//     calculate
+// }
 function handleOperator(nextOperator){
     const value=parseFloat(displayValue);
 
