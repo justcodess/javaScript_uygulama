@@ -4,37 +4,37 @@ document.querySelector(".start_button").addEventListener("click",function(){
 
 })
 
-started();
-let cardArray=new Array();
-let openedCardArray=new Array();
-let openedCardNum=0;
+// started();
+// let cardArray=new Array();
+// let openedCardArray=new Array();
+// let openedCardNum=0;
 
-function started(){
-    let i,j,random;
-    let cardNum=4;
-    let ranCardArray=new Array();
+// function started(){
+//     let i,j,random;
+//     let cardNum=4;
+//     let ranCardArray=new Array();
 
-    for(i=0;i<2;i++){
-        for(j=0;j<cardNum;j++){
-            cardArray.push(j+".jpeg");
-        }
-    }
-    for(i=0;i<cardNum*2;i++){
-        random=Math.floor(Math.random()*(cardArray.length-1));
-        ranCardArray[i]=cardArray[i];
-        cardArray.splice(random,1);
+//     for(i=0;i<2;i++){
+//         for(j=0;j<cardNum;j++){
+//             cardArray.push(j+".jpeg");
+//         }
+//     }
+//     for(i=0;i<cardNum*2;i++){
+//         random=Math.floor(Math.random()*(cardArray.length-1));
+//         ranCardArray[i]=cardArray[i];
+//         cardArray.splice(random,1);
 
-        // document.getElementById("a+${i}").addEventListener("click",function(){
-        //     document.getElementById("a+${i}").style.backgroundImage = ranCardArray[i];})
+//         // document.getElementById("a+${i}").addEventListener("click",function(){
+//         //     document.getElementById("a+${i}").style.backgroundImage = ranCardArray[i];})
     
-        document.write.("<div class="p[i]"id="a[i]" class="card"><img src='resimler/" +ranCardArray[i]+"'</div>");
+//         document.write.("<div class="p[i]"id="a[i]" class="card"><img src='resimler/" +ranCardArray[i]+"'</div>");
     
-    }
-    cardArray=ranCardArray;
-}
+//     }
+//     cardArray=ranCardArray;
+// }
 
-const cards=document.querySelector("cards");
-const card=document.querySelector("card");
+// const cards=document.querySelector("cards");
+// const card=document.querySelector("card");
 
 
 

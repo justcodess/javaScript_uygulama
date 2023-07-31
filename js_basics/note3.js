@@ -121,7 +121,7 @@ function makeUpperCase(str) {
 
     return s.replace(/!/gi,"");
   }
---------------------------------------------
+
   function removeExclamationMarks(s){
     return s.split("!").join('');
   }
@@ -144,7 +144,7 @@ function makeUpperCase(str) {
   
     arr = arr?.filter((item, i)=>i%2==0)
     return arr
--------------------------------------------
+
     function removeEveryOther(arr){
         return arr.filter(function( item, index) {
           return index % 2 === 0;

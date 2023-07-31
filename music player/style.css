@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(105, 100, 92, 0.356) ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50vh;
+    height: 60vh;
+    background-color: rgb(250, 235, 215,0.7);
+    border-radius: 10px;
+    border:2px  solid  rgb(235, 220, 201);
+}
+.imgBox{
+    height: 30vh;
+    width: 30vh;
+    border:2px  solid  rgb(235, 220, 201);
+    border-radius: 5px;
+}
+.titleBox{
+    padding: 20px;
+}
+.control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    width: 35vh;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.listSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.listIcon a{
+    font-size: 10px;
+}
+a{
+    font-size: 15px;
+    color: rgb(77, 28, 28);
+}
