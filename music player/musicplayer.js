@@ -4,9 +4,11 @@ class MusicPlayer {
         this.index = 0;
     }
 
+
     getMusic() {
         return this.musicList[this.index];
     }
+    
     next(){
         if(this.index+1 != this.musicList.length){
             this.index++;
@@ -16,9 +18,10 @@ class MusicPlayer {
         }
        
     }
-    previous(){
+
+    prev(){
         if(this.index != 0){
-            index--;
+            this.index--;
         }
         else{
             this.index=this.musicList.length-1;

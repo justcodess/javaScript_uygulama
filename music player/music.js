@@ -1,5 +1,5 @@
 class Music{
-    constructor(title,singer,image,file){
+    constructor(title,singer,img,file){
         this.title=title;
         this.singer=singer;
         this.img=img;
@@ -7,12 +7,12 @@ class Music{
     }
 
     getName(){
-        return this.title+"-"+this.singer;
+        return this.title;
     }
 }
 
 const musicList=[
-    new music("güzel bir gün","teoman","1.jpg","1.mp3"),
-    new music("madem","dolu kadehi ters tut","1.jpg","2.mp3"),
-    new music("istanbul","sertab erener","1.jpg","3.mp3")
-]
+    new Music("güzel bir gün","teoman","10.jpg","1.mp3"),
+    new Music("madem","dolu kadehi ters tut","20.jpg","2.mp3"),
+    new Music("istanbul","sertab erener","30.jpg","3.mp3")
+];

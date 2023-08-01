@@ -10,34 +10,53 @@
 </head>
 <body>
     <div class="container">
-        <img class="imgBox" src="img/10.jpg" alt="" ></img>
+        <img class="imgBox" src="" alt="" ></img>
+        <audio id="audio" src=""></audio>
         <div class="titleBox">
-            <div class="song"></div>
-            <div class="singer"></div>
+            <div><p class="title"></p></div>
+            <div><p class="singer"></p></div>
         </div>
-        <audio controls class="audio"><source src="1.mp3" type="audio/mpeg"></audio>
-
+        <!-- <audio controls class="audio"><source src="1.mp3" type="audio/mpeg"></audio> -->
+        <div class="timer">
+            
+            <div><input type="range" id="timeLine"></div>
+            <div class="timeBar">
+                <span class="currentTime"></span>
+                <span class="duration"></span>
+            </div>
+        </div>
         <div class="iconBox">
+            
            <div class="control">
-            <div class="previous"><a href="#"><i class="fa-solid fa-forward-step fa-rotate-180 fa-2x"></i></a></div>
-            <div class="play"><a href="#"><i class="fa-solid fa-play fa-2x"></i></a></div>
-            <div class="next"><a href="#"><i class="fa-solid fa-forward-step fa-2x"></i></a></div>
+            <i id="prev" class="fa-solid fa-forward-step fa-rotate-180 fa-2x"></i>
+            <i id="play" class="fa-solid fa-play fa-3x"></i>
+            <i id="next" class="fa-solid fa-forward-step fa-2x"></i>
         </div> 
         <div class="listSide">
-            <div class="listIcon">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <button class="listIcon" data-bs-toggle="collepse"
+            data-bs-target="#songList">
+                <i class="fa-solid fa-bars"></i></button>
+            <div class="volSide">
+                <div class="sesAyarı"><input type="range" id="volumeBar" max="100" value="100"></div>
+                <div class="setvolume">
+                    <i id="volume" class="fa-solid fa-volume-high" ></i></div>
             </div>
-            <div class="info">
-                <a href="#"><i class="fa-solid fa-headphones"></i></a>
-            </div>
-
         </div>
+        </div>
+         <div id="songList" class="collapse">
+            <!-- <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>helllo here listen</span>
+                <span class="badge bg-primary rounded-pill">3.40</span>
+                </li> -->
+                
+            </ul>
         </div>
     </div>
+   
+    <script src="musicplayer.js"></script>
+    <script src="music.js"></script>
+    <script src="app.js"></script>
     
-
-    <script>scr='app.js'</script>
-    <script>scr='music.js'</script>
-    <script>scr='musicplayer.js'</script>
 </body>
 </html>
