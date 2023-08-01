@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+</head>
+<body>
+    <script>
+
+            
+            const request=new XMLHttpRequest();
+
+            request.open('GET','https://restcountries.com/v3.1/name/deutschland');
+            request.send();
+
+            //asyn
+            request.addEventListener('load',function() {
+                let responseText=this.responseText;
+                // //bu string json'a cevrilmeli
+                
+                data= JSON.parse(responseText);
+                console.log("request", data); //string
+                console.log(data); //obj
+                setCountry(data[0]);
+            });
+
+            setCountry=(data)=>{
+                const html=`
+                `;
+            }
+        
+
+        
+
+    </script>
+</body>
+</html>
