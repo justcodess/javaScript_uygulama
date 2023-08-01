@@ -109,6 +109,7 @@ const volumeoff =() =>{
     setvolume.classList.remove("off");
     volume.classList="fa-solid fa-volume-xmark";
     audio.muted= true;
+    volumeBar.value=0;
 }
 //ses açık
 const volumeon =(e) =>{
@@ -116,7 +117,7 @@ const volumeon =(e) =>{
     volume.classList="fa-solid fa-volume-high ";
     audio.muted= false;
     volumeBar.value=100;
-    //sıkıntı var bar 100 ama volume değil !!!
+    //sıkıntı var : bar 100 ama volume değil !!!
 }
 
 volumeBar.addEventListener("input",(e) =>{
